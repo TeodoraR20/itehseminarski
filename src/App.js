@@ -11,6 +11,8 @@ import AddProduct from './AddProduct'
 import Register from './Register'
 import Protected from './Protected'
 
+import ProductList   from './ProductList'
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,7 @@ function App() {
 
    
 <Routes>
-
+<Route path="/" element={<ProductList/>} />
 <Route path="/login" element={<Login/>} />
 <Route path="/register" element={<Register/>} />
 <Route path="/add" element={<AddProduct/>} >   </Route>
